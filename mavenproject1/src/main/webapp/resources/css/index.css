@@ -1,0 +1,436 @@
+
+/*avatar*/
+.huyen{
+    text-align: center;
+}
+/*end*/
+
+/*menu*/
+.nav-item a{
+   
+    font-size: 17px;
+    color:#361D9D;
+}
+.nav-item a:hover{
+    color: white;
+}
+.navbar {
+    background: linear-gradient(  #5567C9, #C7D7FB);
+}
+.imageavt{
+    width: 38% ;
+        
+}
+.hinhanhavt{
+    width:100px ;
+    font-size: 19px;
+}
+
+
+/*footer*/
+footer{
+    
+    background: linear-gradient(  #5567C9, #C7D7FB);
+    color:#361D9D;
+}
+footer:hover{
+    color: white;
+}
+
+
+
+/*nut form them*/
+
+/*button*/
+.col-sm-6{
+    width: 200px;
+    left: 20px;
+}
+.a{
+    position: absolute;
+    right:0;
+    top:17%;
+    margin-right: 210px;
+}
+
+.b{
+    position: absolute;
+    right:0;
+    top: 22%;
+    margin-right: 206px;
+}
+.c{
+    position: absolute;
+    right:0;
+    top: 13.5%;
+    margin-right: 206px;
+}
+.d{
+    position: absolute;
+    right:0;
+    top: 17%;
+    margin-right: 206px;
+
+}
+/*button*/
+
+/* nút trên slide*/
+.nut button{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.nut button:first-child{
+    margin-left: 84%;
+}
+
+.container{
+    max-width: 540px;
+}
+*/*slide đau trang chu*/
+
+#myCarousel h4{
+    margin-left: 100px;
+    font-size:50px;
+    margin-bottom:15px;
+    color:#FFF;
+    line-height:100%;
+    letter-spacing:0.5px;
+    font-weight:600;
+}
+#myCarousel p{
+    margin-left: 100px;
+    font-size:18px;
+    margin-bottom:15px;
+    color:#d5d5d5;
+}
+#myCarousel .carousel-item a{
+    margin-left: 100px;
+    background:#F47735;
+    font-size:14px;
+    color:#FFF;
+    padding:13px 33px;
+    display:inline-block;
+}
+#myCarousel .carousel-item a:hover{
+    background:#394fa2;
+    text-decoration:none;
+}
+
+#myCarousel .carousel-item h4{
+    -webkit-animation-name:fadeInLeft;
+    animation-name:fadeInLeft;
+}
+#myCarousel .carousel-item p{
+    -webkit-animation-name:slideInRight;
+    animation-name:slideInRight;
+}
+#myCarousel .carousel-item a{
+    -webkit-animation-name:fadeInUp;
+    animation-name:fadeInUp;
+}
+#myCarousel .carousel-item .mask img{
+    -webkit-animation-name:slideInRight;
+    animation-name:slideInRight;
+    display:block;
+    height:auto;
+    width:80%;
+
+}
+#myCarousel h4, #myCarousel p, #myCarousel a, #myCarousel .carousel-item .mask img{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+#myCarousel .container {
+    max-width: 1430px;
+}
+#myCarousel .carousel-item{
+    height:100%;
+    min-height:460px;
+}
+#myCarousel{
+    position:relative;
+    z-index:1;
+    background: linear-gradient( #C7D7FB, #361D9D);
+    /*    background:url(https://i.imgur.com/6axE29k.jpg) center center no-repeat;*/
+    background-size:cover;
+}
+
+
+/*slide*/
+.carousel-item {
+    position: relative;
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+.carousel-fade .carousel-item {
+    opacity: 0;
+    -webkit-transition-duration: .6s;
+    transition-duration: .6s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity
+}
+.carousel-fade .carousel-item-next.carousel-item-left, .carousel-fade .carousel-item-prev.carousel-item-right, .carousel-fade .carousel-item.active {
+    opacity: 1
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-right.active {
+    opacity: 0
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0)
+}
+@supports (transform-style:preserve-3d) {
+    .carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+        -webkit-transform:translate3d(0, 0, 0);
+        transform:translate3d(0, 0, 0)
+    }
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+@-webkit-keyframes slideInRight {
+    from {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInRight {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+}
+/*end slide*/
+
+/*formdangky*/
+.register-photo {
+
+    padding-top: 170px;
+}
+
+.register-photo .image-holder {
+    display: table-cell;
+    width: auto;
+    background: url(https://giatricuocsong.org/wp-content/uploads/2020/10/ky-nang-lam-viec-nhom-3.jpg);
+    background-size: cover
+}
+
+.register-photo .form-container {
+    display: table;
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+}
+
+.register-photo form {
+    display: table-cell;
+    width: 400px;
+    background-color: #ffffff;
+    padding: 40px 60px;
+    color: #505e6c
+}
+
+@media (max-width:991px) {
+    .register-photo form {
+        padding: 40px
+    }
+}
+
+.register-photo form h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px
+
+}
+
+.register-photo form .form-control {
+    background: transparent;
+    border: none;
+    color:  #61acb3;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 0px;
+    height: 40px
+}
+
+.register-photo form .form-check {
+    font-size: 13px;
+    line-height: 20px
+
+}
+
+.register-photo form .btn-primary {
+    background: #61acb3 ;
+    border: none;
+    border-radius: 25px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important
+}
+
+.register-photo form .btn-primary:hover,
+.register-photo form .btn-primary:active {
+    background:#61acb3
+}
+
+.register-photo form .btn-primary:active {
+    transform: translateY(1px)
+}
+
+.register-photo form .already {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none
+}
+/*register*/
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.nen {
+    background:  linear-gradient(  #6C7EE1, #C7D7FB) ;
+}
+
+.btn-gmail i{
+    margin-right: 3% ;
+}
+.form-dn{
+    margin-top: 17% ;
+}
+.fm{
+    margin-top: 3.5% ;
+}
+.frm{
+    margin-top: 20% ;
+}
+
+

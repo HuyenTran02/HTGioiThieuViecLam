@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+        <put-attribute name="content" value="" />
+    </definition>
+    
+    <definition name="baseLayout2" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="content" value="" />
+    </definition>
+    
+    <definition name="baseLayout3" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="footer" value="" />
+        <put-attribute name="content" value="" />
+    </definition>
+    
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content" value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    
+    <definition name="jobss" extends="baseLayout3">
+        <put-attribute name="title" value="Công Viêc 1" />
+        <put-attribute name="content" value="/WEB-INF/pages/jobs.jsp" />
+    </definition>
+    
+    <definition name="jobs" extends="baseLayout3">
+        <put-attribute name="title" value="Công Viêc" />
+        <put-attribute name="content" value="/WEB-INF/pages/job.jsp" />
+    </definition>
+    
+    <definition name="addJob" extends="baseLayout2">
+        <put-attribute name="title" value="Thêm Công Việc" />
+        <put-attribute name="content" value="/WEB-INF/pages/addJob.jsp" />
+    </definition>
+    
+    <definition name="jobDetail" extends="baseLayout3">
+        <put-attribute name="title" value="Chi Tiết Công Việc" />
+        <put-attribute name="content" value="/WEB-INF/pages/jobDetail.jsp" />
+    </definition>
+    
+    <definition name="companyDetail" extends="baseLayout3">
+        <put-attribute name="title" value="Chi Tiết Công Ty" />
+        <put-attribute name="content" value="/WEB-INF/pages/companyDetail.jsp" />
+    </definition>
+    
+    <definition name="categories" extends="baseLayout3">
+        <put-attribute name="title" value="Chuyên Ngành" />
+        <put-attribute name="content" value="/WEB-INF/pages/category.jsp" />
+    </definition>
+    
+    <definition name="addCate" extends="baseLayout2">
+        <put-attribute name="title" value="Thêm Ngành Nghề" />
+        <put-attribute name="content" value="/WEB-INF/pages/addCate.jsp" />
+    </definition>
+    
+    <definition name="location" extends="baseLayout3">
+        <put-attribute name="title" value="Khu Vực" />
+        <put-attribute name="content" value="/WEB-INF/pages/location.jsp" />
+    </definition>
+    
+    <definition name="addLocation" extends="baseLayout2">
+        <put-attribute name="title" value="Thêm Khu Vực" />
+        <put-attribute name="content" value="/WEB-INF/pages/addLocation.jsp" />
+    </definition>
+    
+    <definition name="companies" extends="baseLayout">
+        <put-attribute name="title" value="Doanh Nghiệp" />
+        <put-attribute name="content" value="/WEB-INF/pages/company.jsp" />
+    </definition>
+    
+    <definition name="addCompany" extends="baseLayout2">
+        <put-attribute name="title" value="Thêm Doanh Nghiệp" />
+        <put-attribute name="content" value="/WEB-INF/pages/addCompany.jsp" />
+    </definition>
+    
+    <definition name="login" extends="baseLayout2">
+        <put-attribute name="title" value="Đăng nhập" />
+        <put-attribute name="content" value="/WEB-INF/pages/login.jsp" />
+    </definition>
+    
+    <definition name="users" extends="baseLayout">
+        <put-attribute name="title" value="người dùng" />
+        <put-attribute name="content" value="/WEB-INF/pages/user.jsp" />
+    </definition>
+    
+    <definition name="post" extends="baseLayout3">
+        <put-attribute name="title" value="Đăng tin" />
+        <put-attribute name="content" value="/WEB-INF/pages/post.jsp" />
+    </definition>
+    
+    <definition name="search" extends="baseLayout3">
+        <put-attribute name="title" value="Tìm ứng viên" />
+        <put-attribute name="content" value="/WEB-INF/pages/search.jsp" />
+    </definition>
+    
+    <definition name="profiles" extends="baseLayout">
+        <put-attribute name="title" value="hồ sơ người dùng" />
+        <put-attribute name="content" value="/WEB-INF/pages/profile.jsp" />
+    </definition>
+    
+    <definition name="profileCompany" extends="baseLayout3">
+        <put-attribute name="title" value="hồ sơ doanh nghiệp" />
+        <put-attribute name="content" value="/WEB-INF/pages/profileCompany.jsp" />
+    </definition>
+    
+    <definition name="addUser" extends="baseLayout2">
+        <put-attribute name="title" value="thêm người dùng" />
+        <put-attribute name="content" value="/WEB-INF/pages/addUser.jsp" />
+    </definition>
+    
+    <definition name="applyCv" extends="baseLayout2">
+        <put-attribute name="title" value="nộp cv" />
+        <put-attribute name="content" value="/WEB-INF/pages/applyCv.jsp" />
+    </definition>
+    
+    <definition name="CV" extends="baseLayout">
+        <put-attribute name="title" value="cv" />
+        <put-attribute name="content" value="/WEB-INF/pages/cv.jsp" />
+    </definition>
+    
+    <definition name="pdf" extends="baseLayout">
+        <put-attribute name="title" value="xem cv" />
+        <put-attribute name="content" value="/WEB-INF/pages/pdf.jsp" />
+    </definition>
+    
+    <definition name="stats" extends="baseLayout3">
+        <put-attribute name="title" value="Thống kê báo cáo" />
+        <put-attribute name="content" value="/WEB-INF/pages/stats.jsp" />
+    </definition>
+    
+    <definition name="quarterStats" extends="baseLayout3">
+        <put-attribute name="title" value="Thống kê theo quý" />
+        <put-attribute name="content" value="/WEB-INF/pages/quarterStats.jsp" />
+    </definition>
+    
+    <definition name="yearStats" extends="baseLayout3">
+        <put-attribute name="title" value="Thống kê theo năm" />
+        <put-attribute name="content" value="/WEB-INF/pages/yearStats.jsp" />
+    </definition>
+    
+</tiles-definitions>
+
